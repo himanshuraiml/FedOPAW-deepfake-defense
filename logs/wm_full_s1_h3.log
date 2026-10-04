@@ -1,0 +1,38 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+training naive embedder
+   step 0 wm=0.282 img=0.00087
+   step 50 wm=0.723 img=0.00089
+   step 100 wm=0.299 img=0.00089
+   step 150 wm=0.268 img=0.00093
+   step 200 wm=0.694 img=0.00095
+   step 250 wm=0.270 img=0.00097
+adversarial fine-tune (AdvMark-Fed proxy)
+   step 0 wm=0.266 img=0.00098 det=0.577
+   step 50 wm=0.667 img=0.00100 det=0.413
+   step 100 wm=0.262 img=0.00100 det=0.642
+   step 150 wm=0.238 img=0.00101 det=0.299
+   step 200 wm=0.636 img=0.00102 det=0.375
+   step 250 wm=0.224 img=0.00104 det=0.554
+   step 300 wm=0.229 img=0.00101 det=0.674
+   step 350 wm=0.599 img=0.00102 det=0.608
+   step 0 wm=0.260 img=0.00099 det=0.860
+   step 50 wm=0.671 img=0.00100 det=0.554
+   step 100 wm=0.256 img=0.00101 det=0.634
+   step 150 wm=0.253 img=0.00100 det=0.712
+   step 200 wm=0.681 img=0.00100 det=0.760
+   step 250 wm=0.257 img=0.00101 det=0.473
+   step 300 wm=0.248 img=0.00100 det=0.446
+   step 350 wm=0.692 img=0.00100 det=0.461
+   step 0 wm=0.259 img=0.00098 det=0.823
+   step 50 wm=0.684 img=0.00100 det=0.806
+   step 100 wm=0.257 img=0.00100 det=0.833
+   step 150 wm=0.251 img=0.00100 det=0.345
+   step 200 wm=0.622 img=0.00100 det=0.679
+   step 250 wm=0.236 img=0.00102 det=0.555
+   step 300 wm=0.217 img=0.00103 det=0.505
+   step 350 wm=0.599 img=0.00100 det=0.538
+clean {"auc_no_wm": 0.9767833333333333, "naive": {"auc": 0.9123611111111112, "delta_auc": -6.442222222222216, "wba_authentic": 98.59722256660461, "wba_manipulated": 98.7500011920929}, "det_ft": {"auc": 0.9348555555555556, "delta_auc": -4.192777777777779, "wba_authentic": 98.59722256660461, "wba_manipulated": 98.7500011920929}, "advmark": {"auc": 0.9310388888888889, "delta_auc": -4.574444444444447, "wba_authentic": 99.1527795791626, "wba_manipulated": 99.16666746139526}, "emb_only": {"auc": 0.9282666666666668, "delta_auc": -4.851666666666654, "wba_authentic": 99.20833110809326, "wba_manipulated": 99.2430567741394}}
+gauss {"auc_no_wm": 0.7579444444444444, "naive": {"auc": 0.7632555555555556, "delta_auc": 0.5311111111111155, "wba_authentic": 98.27777743339539, "wba_manipulated": 98.56250286102295}, "det_ft": {"auc": 0.72685, "delta_auc": -3.1094444444444425, "wba_authentic": 98.37499856948853, "wba_manipulated": 98.5486090183258}, "advmark": {"auc": 0.7224999999999999, "delta_auc": -3.54444444444445, "wba_authentic": 98.97222518920898, "wba_manipulated": 99.01388883590698}, "emb_only": {"auc": 0.7624166666666666, "delta_auc": 0.4472222222222211, "wba_authentic": 99.04166460037231, "wba_manipulated": 99.04166460037231}}
+jpeg {"auc_no_wm": 0.6905833333333333, "naive": {"auc": 0.6539166666666667, "delta_auc": -3.6666666666666625, "wba_authentic": 89.93055820465088, "wba_manipulated": 90.14583230018616}, "det_ft": {"auc": 0.7205611111111111, "delta_auc": 2.997777777777777, "wba_authentic": 89.93055820465088, "wba_manipulated": 90.14583230018616}, "advmark": {"auc": 0.6722916666666667, "delta_auc": -1.8291666666666595, "wba_authentic": 90.68055748939514, "wba_manipulated": 90.5347228050232}, "emb_only": {"auc": 0.6787055555555555, "delta_auc": -1.1877777777777876, "wba_authentic": 90.38888812065125, "wba_manipulated": 90.39583206176758}}
+crop {"auc_no_wm": 0.8889138888888889, "naive": {"auc": 0.7885944444444445, "delta_auc": -10.031944444444441, "wba_authentic": 59.361112117767334, "wba_manipulated": 59.52777862548828}, "det_ft": {"auc": 0.8402138888888889, "delta_auc": -4.8699999999999966, "wba_authentic": 59.361112117767334, "wba_manipulated": 59.52777862548828}, "advmark": {"auc": 0.7943722222222223, "delta_auc": -9.454166666666664, "wba_authentic": 72.66666889190674, "wba_manipulated": 73.22916388511658}, "emb_only": {"auc": 0.785761111111111, "delta_auc": -10.315277777777787, "wba_authentic": 73.29166531562805, "wba_manipulated": 73.45138788223267}}
+saved; conflict means {'naive': -0.0048810976219829175, 'advmark': -0.0032662127225194125} psnr 30.0067138671875 29.884431838989258

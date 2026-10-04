@@ -1,0 +1,38 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+training naive embedder
+   step 0 wm=0.276 img=0.00087
+   step 50 wm=0.734 img=0.00088
+   step 100 wm=0.284 img=0.00090
+   step 150 wm=0.265 img=0.00093
+   step 200 wm=0.692 img=0.00095
+   step 250 wm=0.283 img=0.00096
+adversarial fine-tune (AdvMark-Fed proxy)
+   step 0 wm=0.254 img=0.00099 det=0.532
+   step 50 wm=0.668 img=0.00101 det=0.739
+   step 100 wm=0.264 img=0.00100 det=0.800
+   step 150 wm=0.232 img=0.00102 det=0.273
+   step 200 wm=0.630 img=0.00100 det=0.858
+   step 250 wm=0.251 img=0.00099 det=0.490
+   step 300 wm=0.218 img=0.00103 det=0.475
+   step 350 wm=0.596 img=0.00102 det=0.637
+   step 0 wm=0.261 img=0.00099 det=0.364
+   step 50 wm=0.672 img=0.00101 det=0.602
+   step 100 wm=0.268 img=0.00100 det=0.542
+   step 150 wm=0.257 img=0.00099 det=0.504
+   step 200 wm=0.718 img=0.00098 det=0.411
+   step 250 wm=0.256 img=0.00101 det=0.710
+   step 300 wm=0.247 img=0.00100 det=0.451
+   step 350 wm=0.676 img=0.00097 det=0.303
+   step 0 wm=0.257 img=0.00099 det=0.966
+   step 50 wm=0.672 img=0.00099 det=0.434
+   step 100 wm=0.258 img=0.00099 det=0.293
+   step 150 wm=0.247 img=0.00100 det=0.603
+   step 200 wm=0.622 img=0.00102 det=0.494
+   step 250 wm=0.239 img=0.00101 det=0.380
+   step 300 wm=0.227 img=0.00101 det=0.749
+   step 350 wm=0.588 img=0.00102 det=0.560
+clean {"auc_no_wm": 0.9756166666666667, "naive": {"auc": 0.9158555555555556, "delta_auc": -5.976111111111104, "wba_authentic": 98.44444394111633, "wba_manipulated": 98.60416650772095}, "det_ft": {"auc": 0.93615, "delta_auc": -3.946666666666665, "wba_authentic": 98.44444394111633, "wba_manipulated": 98.60416650772095}, "advmark": {"auc": 0.9341166666666667, "delta_auc": -4.149999999999999, "wba_authentic": 99.02777671813965, "wba_manipulated": 99.00694489479065}, "emb_only": {"auc": 0.924088888888889, "delta_auc": -5.152777777777773, "wba_authentic": 98.95833134651184, "wba_manipulated": 99.05555844306946}}
+gauss {"auc_no_wm": 0.7152333333333333, "naive": {"auc": 0.7464944444444446, "delta_auc": 3.1261111111111295, "wba_authentic": 98.21527600288391, "wba_manipulated": 98.34027886390686}, "det_ft": {"auc": 0.7355611111111111, "delta_auc": 2.0327777777777833, "wba_authentic": 98.27083349227905, "wba_manipulated": 98.35416674613953}, "advmark": {"auc": 0.7472666666666666, "delta_auc": 3.203333333333336, "wba_authentic": 98.7916648387909, "wba_manipulated": 98.7916648387909}, "emb_only": {"auc": 0.7482, "delta_auc": 3.29666666666667, "wba_authentic": 98.75694513320923, "wba_manipulated": 98.8402783870697}}
+jpeg {"auc_no_wm": 0.6804166666666667, "naive": {"auc": 0.6503055555555556, "delta_auc": -3.011111111111109, "wba_authentic": 89.11805748939514, "wba_manipulated": 89.15972113609314}, "det_ft": {"auc": 0.6739861111111112, "delta_auc": -0.6430555555555495, "wba_authentic": 89.11805748939514, "wba_manipulated": 89.15972113609314}, "advmark": {"auc": 0.649625, "delta_auc": -3.079166666666666, "wba_authentic": 89.95833396911621, "wba_manipulated": 90.27777910232544}, "emb_only": {"auc": 0.6505055555555557, "delta_auc": -2.9911111111111, "wba_authentic": 90.77777862548828, "wba_manipulated": 90.81249833106995}}
+crop {"auc_no_wm": 0.9094888888888889, "naive": {"auc": 0.8163055555555554, "delta_auc": -9.318333333333351, "wba_authentic": 59.64583158493042, "wba_manipulated": 59.45138931274414}, "det_ft": {"auc": 0.8625500000000001, "delta_auc": -4.693888888888875, "wba_authentic": 59.64583158493042, "wba_manipulated": 59.45138931274414}, "advmark": {"auc": 0.8340055555555554, "delta_auc": -7.548333333333346, "wba_authentic": 72.86111116409302, "wba_manipulated": 74.1944432258606}, "emb_only": {"auc": 0.818811111111111, "delta_auc": -9.067777777777785, "wba_authentic": 73.3472228050232, "wba_manipulated": 74.6180534362793}}
+saved; conflict means {'naive': -0.006337197619335105, 'advmark': -0.004253966640875054} psnr 30.01919174194336 29.909955978393555

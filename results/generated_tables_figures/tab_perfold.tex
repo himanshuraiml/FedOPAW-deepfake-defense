@@ -1,0 +1,15 @@
+\begin{tabular}{@{}llccc@{}}
+\toprule
+Metric & Method & Inpaint. & InsightF. & Text2Img \\
+\midrule
+Closed AUC & Centralized & 99.4 & 99.6 & 98.9 \\
+& FedAvg & 98.2 & 99.2 & 98.6 \\
+& FedOPAW & 97.1 & 98.6 & 97.9 \\
+\midrule
+Unseen AUROC & FedAvg & 98.6 & 96.3 & 94.7 \\
+& FedOPAW stack & 97.8 & 95.0 & 93.2 \\
+\midrule
+Unseen AUROC & CLIP probe & 96.7 & 92.9 & 95.1 \\
+Recall@5\%FPR & FedOPAW stack & 90.8 & 76.6 & 63.8 \\
+\bottomrule
+\end{tabular}

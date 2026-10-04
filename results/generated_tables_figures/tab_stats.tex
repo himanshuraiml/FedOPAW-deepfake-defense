@@ -1,0 +1,19 @@
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Comparison (A vs B) & Mean $\Delta$ & 95\% CI & Wilcoxon $p$ \\
+\midrule
+FedAvg vs centralized (closed AUC) & -0.68 & [-1.22, -0.13] & 0.004 \\
+FedOPAW vs FedAvg (closed AUC) & -0.77 & [-1.03, -0.52] & 0.004 \\
++Federated KD vs FedAvg (closed AUC) & -0.37 & [-0.79, +0.05] & 0.027 \\
++Fed-EWC vs +KD (closed AUC) & -0.59 & [-0.82, -0.37] & 0.004 \\
++GEM vs +Fed-EWC (closed AUC) & +0.21 & [+0.01, +0.42] & 0.055 \\
+FedAvg+EWC vs FedAvg (BWT, AUC pts) & -0.68 & [-0.99, -0.37] & 0.004 \\
++Fed-EWC vs +KD (BWT, AUC pts) & -0.57 & [-0.87, -0.26] & 0.004 \\
++GEM vs +Fed-EWC (BWT, AUC pts) & +0.38 & [+0.10, +0.67] & 0.020 \\
+Detector: FedOPAW-stack vs FedAvg (unseen AUROC) & -1.17 & [-1.88, -0.46] & 0.008 \\
+Fusion vs detector alone (unseen AUROC) & -1.05 & [-1.94, -0.17] & 0.012 \\
++CLIP vs detector alone (unseen AUROC) & -0.35 & [-0.67, -0.03] & 0.004 \\
++Provenance vs fusion (unseen AUROC) & -0.89 & [-1.34, -0.44] & 0.008 \\
+Detector vs CLIP probe (unseen AUROC) & +0.48 & [-1.88, +2.84] & 0.496 \\
+\bottomrule
+\end{tabular}

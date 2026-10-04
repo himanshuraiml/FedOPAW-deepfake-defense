@@ -1,0 +1,10 @@
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+Method & Uplink & Compr. & Rounds to & Final \\
+& (MB/client/rd) & ratio & 90\% AUC & AUC \\
+\midrule
+FedAvg (fp32 weights) & 45.1 & 1.0$\times$ & 6.1 & 98.6$\pm$0.7 \\
+FedOPAW (int8 update) & 11.3 & 4.0$\times$ & 5.9 & 97.9$\pm$1.0 \\
+FedOPAW + 30\% sparse mask & 4.8 & 9.3$\times$ & 6.6 & 97.6$\pm$1.2 \\
+\bottomrule
+\end{tabular}

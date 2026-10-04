@@ -1,0 +1,36 @@
+{
+ "n_runs": {
+  "central": 9,
+  "fedavg": 9,
+  "fedavg_ewc": 9,
+  "fedprox": 9,
+  "full": 9,
+  "full_sparse": 9,
+  "kd": 9,
+  "kd_ewc": 9,
+  "kd_ewc_gem": 9
+ },
+ "central_closed_auc": 0.9931284722222222,
+ "openset_avg": {
+  "clip_zeroshot@fedavg": 0.5670313657407408,
+  "univfd_style@fedavg": 0.9489552469135804,
+  "freqanom_only@kd_ewc_gem": 0.4220487654320988,
+  "ckm_only@kd_ewc_gem": 0.9537165123456791,
+  "fusion_clip@kd_ewc_gem": 0.9502164351851853,
+  "fusion_freq@kd_ewc_gem": 0.9345694830246912,
+  "fusion_full@kd_ewc_gem": 0.9431826774691356,
+  "fusion_full_prov@full": 0.9342577160493827
+ },
+ "conflict_mean": {
+  "naive": -0.003917484793357155,
+  "advmark": -0.003446100959241718
+ },
+ "conflict_frac_below_-0.5": {
+  "naive": 0.0,
+  "advmark": 0.0
+ },
+ "psnr": {
+  "naive": 30.009496053059895,
+  "advmark": 29.908662796020508
+ }
+}

@@ -1,0 +1,38 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+training naive embedder
+   step 0 wm=0.295 img=0.00085
+   step 50 wm=0.721 img=0.00087
+   step 100 wm=0.282 img=0.00092
+   step 150 wm=0.262 img=0.00094
+   step 200 wm=0.683 img=0.00094
+   step 250 wm=0.278 img=0.00097
+adversarial fine-tune (AdvMark-Fed proxy)
+   step 0 wm=0.262 img=0.00100 det=0.529
+   step 50 wm=0.680 img=0.00100 det=0.722
+   step 100 wm=0.269 img=0.00099 det=0.774
+   step 150 wm=0.241 img=0.00100 det=0.531
+   step 200 wm=0.635 img=0.00101 det=0.393
+   step 250 wm=0.244 img=0.00100 det=0.276
+   step 300 wm=0.217 img=0.00102 det=0.531
+   step 350 wm=0.605 img=0.00101 det=0.419
+   step 0 wm=0.249 img=0.00099 det=0.838
+   step 50 wm=0.678 img=0.00099 det=0.404
+   step 100 wm=0.257 img=0.00101 det=0.535
+   step 150 wm=0.248 img=0.00100 det=0.290
+   step 200 wm=0.683 img=0.00098 det=0.849
+   step 250 wm=0.274 img=0.00098 det=0.312
+   step 300 wm=0.250 img=0.00101 det=0.520
+   step 350 wm=0.664 img=0.00101 det=0.405
+   step 0 wm=0.254 img=0.00101 det=0.511
+   step 50 wm=0.668 img=0.00100 det=1.026
+   step 100 wm=0.242 img=0.00101 det=1.378
+   step 150 wm=0.239 img=0.00101 det=1.424
+   step 200 wm=0.636 img=0.00101 det=0.620
+   step 250 wm=0.242 img=0.00100 det=0.801
+   step 300 wm=0.234 img=0.00099 det=0.679
+   step 350 wm=0.601 img=0.00101 det=1.111
+clean {"auc_no_wm": 0.98405, "naive": {"auc": 0.9169222222222222, "delta_auc": -6.712777777777779, "wba_authentic": 98.61111044883728, "wba_manipulated": 98.8611102104187}, "det_ft": {"auc": 0.9358777777777778, "delta_auc": -4.817222222222217, "wba_authentic": 98.61111044883728, "wba_manipulated": 98.8611102104187}, "advmark": {"auc": 0.9332944444444444, "delta_auc": -5.075555555555555, "wba_authentic": 99.12499785423279, "wba_manipulated": 99.20138716697693}, "emb_only": {"auc": 0.9172055555555554, "delta_auc": -6.684444444444459, "wba_authentic": 99.07639026641846, "wba_manipulated": 99.25694465637207}}
+gauss {"auc_no_wm": 0.7125666666666667, "naive": {"auc": 0.7316055555555554, "delta_auc": 1.9038888888888716, "wba_authentic": 98.31944704055786, "wba_manipulated": 98.68055582046509}, "det_ft": {"auc": 0.7123277777777779, "delta_auc": -0.023888888888878856, "wba_authentic": 98.27083349227905, "wba_manipulated": 98.56944680213928}, "advmark": {"auc": 0.6836111111111111, "delta_auc": -2.8955555555555623, "wba_authentic": 98.84722232818604, "wba_manipulated": 98.95833134651184}, "emb_only": {"auc": 0.7300666666666666, "delta_auc": 1.749999999999996, "wba_authentic": 98.7916648387909, "wba_manipulated": 99.07639026641846}}
+jpeg {"auc_no_wm": 0.6712277777777778, "naive": {"auc": 0.6337527777777778, "delta_auc": -3.7474999999999925, "wba_authentic": 89.69444632530212, "wba_manipulated": 90.21527767181396}, "det_ft": {"auc": 0.6826166666666666, "delta_auc": 1.1388888888888893, "wba_authentic": 89.69444632530212, "wba_manipulated": 90.21527767181396}, "advmark": {"auc": 0.6253583333333333, "delta_auc": -4.586944444444441, "wba_authentic": 90.645831823349, "wba_manipulated": 91.17361307144165}, "emb_only": {"auc": 0.6284055555555556, "delta_auc": -4.28222222222222, "wba_authentic": 90.3124988079071, "wba_manipulated": 90.98610877990723}}
+crop {"auc_no_wm": 0.9000222222222222, "naive": {"auc": 0.7856333333333334, "delta_auc": -11.438888888888876, "wba_authentic": 59.29861068725586, "wba_manipulated": 59.38194394111633}, "det_ft": {"auc": 0.8272611111111111, "delta_auc": -7.276111111111105, "wba_authentic": 59.29861068725586, "wba_manipulated": 59.38194394111633}, "advmark": {"auc": 0.7858833333333333, "delta_auc": -11.41388888888889, "wba_authentic": 73.00000190734863, "wba_manipulated": 73.67361187934875}, "emb_only": {"auc": 0.7942944444444445, "delta_auc": -10.572777777777764, "wba_authentic": 73.0833351612091, "wba_manipulated": 73.68055582046509}}
+saved; conflict means {'naive': -0.0026997764882980848, 'advmark': -0.003514206979695397} psnr 30.002582550048828 29.92276954650879

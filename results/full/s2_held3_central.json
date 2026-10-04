@@ -1,0 +1,49 @@
+{
+ "val_curve": [],
+ "auc_t1_end": 0.9922361111111111,
+ "auc_t2_end": 0.9884663194444445,
+ "auc_t1_mid": 0.9922361111111111,
+ "bwt": 0.0,
+ "open_set": {
+  "ckm_only": 0.9680350694444444,
+  "clip_zeroshot": 0.5860722222222223,
+  "univfd_style": 0.9468722222222222,
+  "freqanom_only": 0.5104451388888889,
+  "fusion_clip": 0.9662895833333333,
+  "fusion_freq": 0.9650187499999999,
+  "fusion_full": 0.9666000000000001,
+  "unseen_recall_at_5fpr_ckm": 0.84
+ },
+ "tau_fpr": {
+  "0.0": 0.07052631578947369,
+  "0.3": 0.06666666666666667,
+  "0.7": null,
+  "1.0": 0.08571428571428572,
+  "n": {
+   "0.0": 950,
+   "0.3": 75,
+   "0.7": 0,
+   "1.0": 175
+  }
+ },
+ "method": "central",
+ "seed": 2,
+ "held": "text2img",
+ "known": [
+  "inpainting",
+  "insight"
+ ],
+ "hp": {
+  "rounds": 16,
+  "clients": 10,
+  "K": 6,
+  "local_epochs": 1,
+  "central_epochs": 3,
+  "bs": 64,
+  "lr": 0.0001,
+  "lam": 1000.0,
+  "lam_kd": 0.4,
+  "kd_steps": 3
+ },
+ "minutes": 1.824801234404246
+}

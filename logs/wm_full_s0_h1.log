@@ -1,0 +1,37 @@
+training naive embedder
+   step 0 wm=0.276 img=0.00087
+   step 50 wm=0.734 img=0.00088
+   step 100 wm=0.284 img=0.00090
+   step 150 wm=0.265 img=0.00093
+   step 200 wm=0.692 img=0.00095
+   step 250 wm=0.283 img=0.00096
+adversarial fine-tune (AdvMark-Fed proxy)
+   step 0 wm=0.254 img=0.00099 det=1.129
+   step 50 wm=0.668 img=0.00101 det=0.666
+   step 100 wm=0.264 img=0.00100 det=0.390
+   step 150 wm=0.233 img=0.00102 det=0.450
+   step 200 wm=0.631 img=0.00100 det=0.720
+   step 250 wm=0.251 img=0.00099 det=0.744
+   step 300 wm=0.218 img=0.00103 det=0.859
+   step 350 wm=0.596 img=0.00102 det=0.251
+   step 0 wm=0.261 img=0.00099 det=0.941
+   step 50 wm=0.672 img=0.00101 det=1.298
+   step 100 wm=0.268 img=0.00100 det=0.635
+   step 150 wm=0.257 img=0.00099 det=0.563
+   step 200 wm=0.718 img=0.00098 det=0.456
+   step 250 wm=0.256 img=0.00101 det=0.598
+   step 300 wm=0.247 img=0.00100 det=0.523
+   step 350 wm=0.676 img=0.00097 det=0.629
+   step 0 wm=0.257 img=0.00099 det=1.049
+   step 50 wm=0.672 img=0.00098 det=1.054
+   step 100 wm=0.259 img=0.00099 det=1.147
+   step 150 wm=0.248 img=0.00100 det=0.960
+   step 200 wm=0.623 img=0.00101 det=0.523
+   step 250 wm=0.241 img=0.00100 det=0.624
+   step 300 wm=0.229 img=0.00100 det=0.864
+   step 350 wm=0.589 img=0.00101 det=1.267
+clean {"auc_no_wm": 0.9746777777777779, "naive": {"auc": 0.8694, "delta_auc": -10.527777777777791, "wba_authentic": 98.44444394111633, "wba_manipulated": 98.39583039283752}, "det_ft": {"auc": 0.9163555555555556, "delta_auc": -5.832222222222228, "wba_authentic": 98.44444394111633, "wba_manipulated": 98.39583039283752}, "advmark": {"auc": 0.9102, "delta_auc": -6.447777777777786, "wba_authentic": 99.02083277702332, "wba_manipulated": 99.00694489479065}, "emb_only": {"auc": 0.8920444444444444, "delta_auc": -8.263333333333344, "wba_authentic": 98.89583587646484, "wba_manipulated": 99.04860854148865}}
+gauss {"auc_no_wm": 0.7535277777777778, "naive": {"auc": 0.7471555555555556, "delta_auc": -0.6372222222222224, "wba_authentic": 98.21527600288391, "wba_manipulated": 98.16666841506958}, "det_ft": {"auc": 0.7518, "delta_auc": -0.17277777777777725, "wba_authentic": 98.27083349227905, "wba_manipulated": 98.1458306312561}, "advmark": {"auc": 0.7420500000000001, "delta_auc": -1.1477777777777698, "wba_authentic": 98.78472089767456, "wba_manipulated": 98.8611102104187}, "emb_only": {"auc": 0.7586944444444444, "delta_auc": 0.5166666666666653, "wba_authentic": 98.67361187934875, "wba_manipulated": 98.7916648387909}}
+jpeg {"auc_no_wm": 0.6395555555555555, "naive": {"auc": 0.6174111111111111, "delta_auc": -2.214444444444441, "wba_authentic": 89.11805748939514, "wba_manipulated": 89.56944346427917}, "det_ft": {"auc": 0.6624361111111111, "delta_auc": 2.288055555555557, "wba_authentic": 89.11805748939514, "wba_manipulated": 89.56944346427917}, "advmark": {"auc": 0.6252388888888889, "delta_auc": -1.4316666666666644, "wba_authentic": 89.95139002799988, "wba_manipulated": 90.39583206176758}, "emb_only": {"auc": 0.6240972222222222, "delta_auc": -1.5458333333333352, "wba_authentic": 90.44444561004639, "wba_manipulated": 90.27777910232544}}
+crop {"auc_no_wm": 0.8821388888888889, "naive": {"auc": 0.7252583333333333, "delta_auc": -15.688055555555557, "wba_authentic": 59.64583158493042, "wba_manipulated": 58.986109495162964}, "det_ft": {"auc": 0.7994111111111111, "delta_auc": -8.272777777777785, "wba_authentic": 59.64583158493042, "wba_manipulated": 58.986109495162964}, "advmark": {"auc": 0.7496944444444444, "delta_auc": -13.244444444444447, "wba_authentic": 72.86805510520935, "wba_manipulated": 73.46527576446533}, "emb_only": {"auc": 0.7289138888888889, "delta_auc": -15.322500000000005, "wba_authentic": 73.1458306312561, "wba_manipulated": 73.5277771949768}}
+saved; conflict means {'naive': -0.005263132005153845, 'advmark': -0.0032663546281401067} psnr 30.01919174194336 29.923343658447266

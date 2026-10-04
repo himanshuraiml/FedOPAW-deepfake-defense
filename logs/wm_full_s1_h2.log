@@ -1,0 +1,38 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+training naive embedder
+   step 0 wm=0.282 img=0.00087
+   step 50 wm=0.723 img=0.00089
+   step 100 wm=0.299 img=0.00089
+   step 150 wm=0.268 img=0.00093
+   step 200 wm=0.694 img=0.00095
+   step 250 wm=0.270 img=0.00097
+adversarial fine-tune (AdvMark-Fed proxy)
+   step 0 wm=0.266 img=0.00098 det=0.553
+   step 50 wm=0.667 img=0.00100 det=0.781
+   step 100 wm=0.262 img=0.00100 det=0.721
+   step 150 wm=0.238 img=0.00101 det=0.493
+   step 200 wm=0.636 img=0.00102 det=0.534
+   step 250 wm=0.224 img=0.00104 det=0.731
+   step 300 wm=0.228 img=0.00101 det=0.622
+   step 350 wm=0.599 img=0.00102 det=0.515
+   step 0 wm=0.260 img=0.00099 det=0.559
+   step 50 wm=0.671 img=0.00100 det=0.645
+   step 100 wm=0.256 img=0.00101 det=0.347
+   step 150 wm=0.253 img=0.00100 det=0.501
+   step 200 wm=0.681 img=0.00100 det=0.510
+   step 250 wm=0.257 img=0.00101 det=0.520
+   step 300 wm=0.248 img=0.00100 det=0.359
+   step 350 wm=0.692 img=0.00100 det=0.428
+   step 0 wm=0.259 img=0.00098 det=0.845
+   step 50 wm=0.684 img=0.00100 det=0.678
+   step 100 wm=0.256 img=0.00101 det=0.626
+   step 150 wm=0.250 img=0.00100 det=0.419
+   step 200 wm=0.622 img=0.00101 det=0.390
+   step 250 wm=0.235 img=0.00103 det=0.543
+   step 300 wm=0.215 img=0.00103 det=0.613
+   step 350 wm=0.598 img=0.00101 det=0.926
+clean {"auc_no_wm": 0.9836055555555556, "naive": {"auc": 0.9423722222222222, "delta_auc": -4.1233333333333455, "wba_authentic": 98.59722256660461, "wba_manipulated": 98.7500011920929}, "det_ft": {"auc": 0.9535666666666667, "delta_auc": -3.003888888888895, "wba_authentic": 98.59722256660461, "wba_manipulated": 98.7500011920929}, "advmark": {"auc": 0.9404833333333333, "delta_auc": -4.312222222222228, "wba_authentic": 99.1736114025116, "wba_manipulated": 99.1944432258606}, "emb_only": {"auc": 0.9210611111111111, "delta_auc": -6.254444444444451, "wba_authentic": 99.23611283302307, "wba_manipulated": 99.27777647972107}}
+gauss {"auc_no_wm": 0.8249777777777778, "naive": {"auc": 0.8020833333333333, "delta_auc": -2.289444444444455, "wba_authentic": 98.27777743339539, "wba_manipulated": 98.56250286102295}, "det_ft": {"auc": 0.7892777777777777, "delta_auc": -3.5700000000000065, "wba_authentic": 98.37499856948853, "wba_manipulated": 98.5486090183258}, "advmark": {"auc": 0.7642277777777778, "delta_auc": -6.0749999999999975, "wba_authentic": 98.99305701255798, "wba_manipulated": 99.00694489479065}, "emb_only": {"auc": 0.7989833333333334, "delta_auc": -2.599444444444443, "wba_authentic": 99.07639026641846, "wba_manipulated": 99.05555844306946}}
+jpeg {"auc_no_wm": 0.7720722222222223, "naive": {"auc": 0.7815222222222222, "delta_auc": 0.9449999999999958, "wba_authentic": 89.93055820465088, "wba_manipulated": 90.14583230018616}, "det_ft": {"auc": 0.76995, "delta_auc": -0.21222222222222475, "wba_authentic": 89.93055820465088, "wba_manipulated": 90.14583230018616}, "advmark": {"auc": 0.7560111111111111, "delta_auc": -1.6061111111111193, "wba_authentic": 90.67361354827881, "wba_manipulated": 90.61111211776733}, "emb_only": {"auc": 0.7865833333333334, "delta_auc": 1.4511111111111141, "wba_authentic": 90.7152771949768, "wba_manipulated": 90.72916507720947}}
+crop {"auc_no_wm": 0.9237444444444445, "naive": {"auc": 0.8636888888888888, "delta_auc": -6.0055555555555635, "wba_authentic": 59.361112117767334, "wba_manipulated": 59.52777862548828}, "det_ft": {"auc": 0.8561833333333333, "delta_auc": -6.756111111111118, "wba_authentic": 59.361112117767334, "wba_manipulated": 59.52777862548828}, "advmark": {"auc": 0.8299666666666667, "delta_auc": -9.377777777777773, "wba_authentic": 72.72916436195374, "wba_manipulated": 73.16666841506958}, "emb_only": {"auc": 0.8690277777777777, "delta_auc": -5.471666666666675, "wba_authentic": 73.40972423553467, "wba_manipulated": 73.5486090183258}}
+saved; conflict means {'naive': -0.002751221023014902, 'advmark': -0.003259688071363295} psnr 30.0067138671875 29.89536476135254
